@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* General reset and basic styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.base {
+  width: 360px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 100px;
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.display-text {
+  /* outline: 1px solid #fff; */
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:active {
+  background-color: #777;
+}
+
+/* button#zero {
+  grid-column: span 2;
+} */
+
+button#equals {
+  background-color: #ff9500;
+  color: #fff;
+  /* grid-column: span 2; */
+}
+
+button#clear,
+button#clear-entry {
+  background-color: #d9534f;
+}
+
+button#clear:active,
+button#clear-entry:active {
+  background-color: #c9302c;
+}
+
+button.operator {
+  background-color: #5bc0de;
+}
+
+button.operator:active {
+  background-color: #31b0d5;
+}
+
+button.number {
+  background-color: #ddd;
+  color: #000;
+}
+
+button.number:active {
+  background-color: #ccc;
+}
