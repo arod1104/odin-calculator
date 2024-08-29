@@ -9,8 +9,8 @@
   <body>
     <div class="base">
       <div class="display">
-        <div class="display-text current-input">Hello</div>
-        <div class="display-text preview">World</div>
+        <div class="display-text top-display">Hello</div>
+        <div class="display-text bottom-display">World</div>
       </div>
       <div class="buttons">
         <button id="percent" class="action">%</button>
@@ -21,28 +21,29 @@
         <button id="reciprocal" class="action">1/x</button>
         <button id="square" class="action">x^2</button>
         <button id="square-root" class="action"><span>&#8730;</span>2</button>
-        <button id="divide" class="operator">/</button>
+        <button id="divide" class="operator" value="/">/</button>
 
-        <button id="seven" class="number">7</button>
-        <button id="eight" class="number">8</button>
-        <button id="nine" class="number">9</button>
-        <button id="multiply" class="operator">x</button>
+        <button id="seven" class="number" value="7">7</button>
+        <button id="eight" class="number" value="8">8</button>
+        <button id="nine" class="number" value="9">9</button>
+        <button id="multiply" class="operator" value="*">x</button>
 
-        <button id="four" class="number">4</button>
-        <button id="five" class="number">5</button>
-        <button id="six" class="number">6</button>
-        <button id="subtract" class="operator">-</button>
+        <button id="four" class="number" value="4">4</button>
+        <button id="five" class="number" value="5">5</button>
+        <button id="six" class="number" value="6">6</button>
+        <button id="subtract" class="operator" value="-">-</button>
 
-        <button id="one" class="number">1</button>
-        <button id="two" class="number">2</button>
-        <button id="three" class="number">3</button>
-        <button id="add" class="operator">+</button>
+        <button id="one" class="number" value="1">1</button>
+        <button id="two" class="number" value="2">2</button>
+        <button id="three" class="number" value="3">3</button>
+        <button id="add" class="operator" value="+">+</button>
 
         <button id="invert" class="action">+/-</button>
-        <button id="zero" class="number">0</button>
+        <button id="zero" class="number" value="0">0</button>
         <button id="decimal">.</button>
-        <button id="equals" class="operator">=</button>
+        <button id="equal">=</button>
       </div>
     </div>
   </body>
+  <script src="calculator.js"></script>
 </html>

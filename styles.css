@@ -25,17 +25,23 @@ body {
 .display {
   width: 100%;
   margin-bottom: 20px;
-  height: 100px;
+  min-height: 100px;
   background-color: black;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .display-text {
   /* outline: 1px solid #fff; */
   color: #fff;
-  font-size: 2em;
+  font-size: 36px;
   text-align: right;
-  padding: 10px;
+  min-height: 20px;
+  padding: 8px;
+}
+
+.display-text.top-display {
+  font-size: 20px;
+  color: #aaaaaa;
 }
 
 .buttons {
@@ -63,10 +69,9 @@ button:active {
   grid-column: span 2;
 } */
 
-button#equals {
+button#equal {
   background-color: #ff9500;
   color: #fff;
-  /* grid-column: span 2; */
 }
 
 button#clear,
